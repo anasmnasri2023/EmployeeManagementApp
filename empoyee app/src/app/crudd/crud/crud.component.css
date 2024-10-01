@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: transparent;
+  color: black;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.main-body {
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1348px;
+}
+
+.green-button {
+  background-color: green !important;
+  color: white !important;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.action {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-button {
+  color: blue;
+}
+
+.delete-button {
+  color: red;
+}
+
+.details-button {
+  color: green;
+}
+
+.green-snackbar {
+  background-color: rgb(65, 252, 134) !important;
+  color: white !important;
+}
+
+.red-snackbar {
+  background-color: #F44336 !important;
+  color: white !important;
+}

@@ -1,0 +1,18 @@
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+  }
+  .login-image {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 20px; 
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  

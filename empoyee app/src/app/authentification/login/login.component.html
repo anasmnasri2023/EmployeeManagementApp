@@ -1,0 +1,29 @@
+<div class="login-container">
+  <img src="assets/images/login.png" alt="Login Image" class="login-image">
+  <h2>Login</h2>
+  <form (ngSubmit)="login()">
+    <mat-form-field appearance="outline">
+      <mat-icon matPrefix>person</mat-icon>
+      <mat-label>First Name</mat-label>
+      <input matInput type="text" placeholder="Enter First Name" [(ngModel)]="firstName" name="firstName" #firstNameField="ngModel" required>
+      <mat-error *ngIf="firstNameField.invalid && (firstNameField.dirty || firstNameField.touched)">
+        First Name is required
+      </mat-error>
+    </mat-form-field>
+    <br> 
+    <mat-form-field appearance="outline">
+      <mat-icon matPrefix>lock</mat-icon>
+      <mat-label>Password</mat-label>
+      <input matInput type="password" placeholder="Enter Password" [(ngModel)]="password" name="password" #passwordField="ngModel" required>
+      <mat-error *ngIf="passwordField.invalid && (passwordField.dirty || passwordField.touched)">
+        Password is required
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" type="submit">Login</button>
+    <br>
+    <a mat-button color="accent" (click)="goToForgotPassword()">Forgot Password?</a>
+    <br>
+    <p>Don't have an account? <a mat-button color="accent" (click)="goToRegister()">Register</a></p>
+  </form>
+</div>

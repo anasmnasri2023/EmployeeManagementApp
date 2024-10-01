@@ -1,0 +1,66 @@
+<div class="register-container">
+  <h2>Register</h2>
+  <form (ngSubmit)="register()">
+    <div class="row">
+      <mat-form-field appearance="outline" class="third-width">
+        <mat-label>First Name</mat-label>
+        <input matInput type="text" placeholder="Enter First Name" [(ngModel)]="firstName" name="firstName" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="third-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" placeholder="Enter Last Name" [(ngModel)]="lastName" name="lastName" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="third-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" placeholder="Enter Email" [(ngModel)]="email" name="email" required>
+      </mat-form-field>
+    </div>
+    
+    <div class="row">
+      <mat-form-field appearance="outline" class="third-width">
+        <mat-label>Date of Birth</mat-label>
+        <input matInput [matDatepicker]="picker" placeholder="Choose Date" [(ngModel)]="dob" name="dob" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="third-width">
+        <mat-label>Education</mat-label>
+        <mat-select placeholder="Select Education" [(ngModel)]="education" name="education" required>
+          <mat-option *ngFor="let option of educationOptions" [value]="option">{{ option }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="third-width">
+        <mat-label>Company</mat-label>
+        <input matInput type="text" placeholder="Enter Company" [(ngModel)]="company" name="company" required>
+      </mat-form-field>
+    </div>
+    
+    <div class="row">
+      <mat-form-field appearance="outline" class="third-width">
+        <mat-label>Experience</mat-label>
+        <input matInput type="number" placeholder="Enter Experience" [(ngModel)]="experience" name="experience" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="third-width">
+        <mat-label>Package</mat-label>
+        <input matInput type="number" placeholder="Enter Package" [(ngModel)]="package" name="package" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="third-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Enter Password" [(ngModel)]="password" name="password" required>
+      </mat-form-field>
+    </div>
+    
+    <div class="row">
+      <mat-radio-group [(ngModel)]="gender" name="gender" class="full-width" required>
+        <mat-label><b>Gender:</b></mat-label>
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    
+    <div class="button-row">
+      <button mat-raised-button color="primary" type="submit" class="register-button">Register</button>
+      <button mat-raised-button color="warn" (click)="cancel()" class="cancel-button">Cancel</button>
+    </div>
+  </form>
+</div>

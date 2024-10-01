@@ -1,0 +1,189 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "id": "a7b1",
+      "firstName": "anas",
+      "lastName": "Milan",
+      "email": "anes.mnasri@esprit.tn",
+      "dob": "2024-07-30T22:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "anas",
+      "experience": 333333,
+      "package": 333333333
+    },
+    {
+      "firstName": "hjhg ",
+      "lastName": "jbjbkjl",
+      "email": "anes.mnasri@esprit.tn",
+      "dob": "2024-07-17T22:00:00.000Z",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "anas",
+      "experience": 1234,
+      "package": 1234,
+      "id": "d68f"
+    },
+    {
+      "id": "bc0b",
+      "firstName": "txckj",
+      "lastName": "vkjvkv",
+      "email": "imed.imed@imed.com",
+      "dob": "2024-07-23T22:00:00.000Z",
+      "gender": "female",
+      "education": "Post Graduate",
+      "company": "sofiatech",
+      "experience": 12345678,
+      "package": 76543
+    },
+    {
+      "id": "2a35",
+      "firstName": "fdghjkn",
+      "lastName": "tyfguhjk",
+      "email": "mouhamed@esprit.tn",
+      "dob": "2024-07-08T22:00:00.000Z",
+      "gender": "female",
+      "education": "Intermediate",
+      "company": "ftdfghjk",
+      "experience": 22222,
+      "package": 222222
+    },
+    {
+      "id": 702,
+      "firstName": "anas",
+      "lastName": "Milan",
+      "email": "anes.mnasri@esprit.tn",
+      "dob": "2024-07-07T22:00:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "anas",
+      "experience": 23456,
+      "package": 3456
+    },
+    {
+      "id": "b089",
+      "firstName": "aaaaaa",
+      "lastName": "bbbbb",
+      "email": "anes.mnasri@esprit.tn",
+      "dob": "2024-07-28T22:00:00.000Z",
+      "gender": "male",
+      "education": "Post Graduate",
+      "company": "anas",
+      "experience": 6666,
+      "package": 55555
+    },
+    {
+      "firstName": "ala",
+      "lastName": "Milan",
+      "email": "anes.mnasri@esprit.tn",
+      "dob": "2024-07-22T22:00:00.000Z",
+      "gender": "female",
+      "education": "Post Graduate",
+      "company": "anas",
+      "experience": 33333,
+      "package": 3333333,
+      "id": "848e"
+    },
+    {
+      "id": "a8ea",
+      "firstName": "messi",
+      "lastName": "messi",
+      "email": "messi@sofiatech.com",
+      "dob": "2025-02-26T23:00:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "cfrfrc",
+      "experience": 98765432,
+      "package": 98765432
+    },
+    {
+      "firstName": "imen",
+      "lastName": "imen",
+      "email": "ecec@cece",
+      "dob": "2024-07-23T22:00:00.000Z",
+      "gender": "female",
+      "education": "Intermediate",
+      "company": "cfevvfrc",
+      "experience": 4444444,
+      "package": 777777,
+      "id": "c7f1"
+    },
+    {
+      "id": "a57d",
+      "firstName": "yassine",
+      "lastName": "taib",
+      "email": "anes.mnasri@sofiatech.com",
+      "dob": "2017-06-23T22:00:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "gggg",
+      "experience": 111111,
+      "package": 222222
+    },
+    {
+      "id": "09a9",
+      "firstName": "barca",
+      "lastName": "nord",
+      "email": "jbn@gmail.com",
+      "dob": "2024-07-16T22:00:00.000Z",
+      "gender": "female",
+      "education": "Post Graduate",
+      "company": "rfce",
+      "experience": 88888,
+      "package": 9999999
+    },
+    {
+      "id": "74d6",
+      "firstName": "yamal",
+      "lastName": "bib",
+      "email": "anes.mnasri@esprit.tn",
+      "dob": "2024-07-29T22:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "jkbk",
+      "experience": 2222222224,
+      "package": 44444442
+    },
+    {
+      "id": "b833",
+      "firstName": "mnasri",
+      "lastName": "mnasri",
+      "email": "mouhamed@esprit.tn",
+      "dob": "2024-07-23T22:00:00.000Z",
+      "gender": "male",
+      "education": "Post Graduate",
+      "company": "ugiu",
+      "experience": 1111111,
+      "package": 222222222
+    },
+    {
+      "id": "87d7",
+      "firstName": "anas",
+      "lastName": "anas",
+      "email": "anes.mnasri@esprit.tn",
+      "dob": "2024-07-29T22:00:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "jkbk",
+      "experience": 2222222224,
+      "package": 44444442
+    }
+  ]
+}

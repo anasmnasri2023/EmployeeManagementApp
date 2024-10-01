@@ -1,0 +1,81 @@
+<div mat-dialog-title>
+  <h1>Employee Form</h1>
+  <button mat-icon-button (click)="onCancel()" class="close-button">
+    <mat-icon class="red-cross">close</mat-icon>
+  </button>
+</div>
+
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>First name</mat-label>
+        <input matInput type="text" placeholder="Enter first name" formControlName="firstName">
+        <mat-error *ngIf="empForm.controls['firstName'].hasError('required')">First name is required</mat-error>
+        <mat-error *ngIf="empForm.controls['firstName'].hasError('maxlength')">Maximum length is 10 characters</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Enter last name" formControlName="lastName">
+        <mat-error *ngIf="empForm.controls['lastName'].hasError('required')">Last name is required</mat-error>
+        <mat-error *ngIf="empForm.controls['lastName'].hasError('maxlength')">Maximum length is 10 characters</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" placeholder="Enter email" formControlName="email">
+        <mat-error *ngIf="empForm.controls['email'].hasError('required')">Email is required</mat-error>
+        <mat-error *ngIf="empForm.controls['email'].hasError('email')">Invalid email</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Date of birth</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dob">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error *ngIf="empForm.get('dob')?.hasError('required')">Date of birth is required</mat-error>
+        <mat-error *ngIf="empForm.get('dob')?.hasError('matDatepickerParse')">Invalid date</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-radio-group aria-label="Select an option" formControlName="gender">
+        <mat-label><b>Gender</b></mat-label>
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-error *ngIf="empForm.controls['gender'].hasError('required')">Gender is required</mat-error>
+      </mat-radio-group>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Education</mat-label>
+        <mat-select formControlName="education">
+          <mat-option *ngFor="let val of education" [value]="val">{{val}}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="empForm.controls['education'].hasError('required')">Education is required</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Company</mat-label>
+        <input matInput placeholder="Enter company" formControlName="company">
+        <mat-error *ngIf="empForm.controls['company'].hasError('required')">Company is required</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Experience</mat-label>
+        <input matInput placeholder="Enter experience" type="number" formControlName="experience">
+        <mat-error *ngIf="empForm.controls['experience'].hasError('required')">Experience is required</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Package</mat-label>
+        <input matInput placeholder="Enter package" type="number" formControlName="package">
+        <mat-hint>In rupees</mat-hint>
+        <mat-error *ngIf="empForm.controls['package'].hasError('required')">Package is required</mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div mat-dialog-actions class="action">
+    <button mat-button type="button" (click)="onCancel()" class="cancel-button">Cancel</button>
+    <button mat-raised-button color="primary" type="submit" class="save-button">{{ data ? 'Update' : 'Save' }}</button>
+  </div>
+</form>
